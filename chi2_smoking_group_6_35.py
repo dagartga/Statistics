@@ -17,7 +17,7 @@ obs = np.array(
 )
 
 # perform the chi-square test
-chi2_stat, p_val, dof, ex = chi2_contingency(obs)
+chi2_stat, p_val, dof, ex = chi2_contingency(obs, correction=True)
 print(f"Chi2 Stat: {chi2_stat}")
 print(f"Degrees of Freedom: {dof}")
 print(f"P-Value: {p_val}")
