@@ -22,7 +22,7 @@ moe = z * se
 ci_lower = prop_registered - moe
 ci_upper = prop_registered + moe
 
-print(f"Proportion of users who registered: {prop_registered}")
+print(f"Proportion of users who registered: {round(prop_registered, 3)}")
 print(f"With a confidence interval of 90%: {round(ci_lower, 3)} to {round(ci_upper, 3)}")
 
 
@@ -30,4 +30,4 @@ from statsmodels.stats.proportion import proportion_confint
 
 ci_low, ci_upp = proportion_confint(n_registered, n, alpha=0.1, method='normal')
 
-print(f"90% Confidence Interval: {ci_low} to {ci_upp}")
+print(f"90% Confidence Interval: {round(ci_low, 3)} to {round(ci_upp, 3)}")
