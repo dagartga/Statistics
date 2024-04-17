@@ -24,3 +24,5 @@ alpha = 0.05
 power = smp.tt_ind_solve_power(effect_size=effect_size, nobs1=control_size, alpha=alpha, ratio=treatment_size/control_size, alternative='larger')
 
 print("Power of the t-test:", power)
+print("The power of the t-test is the probability \nof correctly rejecting the null hypothesis \nwhen the alternative hypothesis is true.")
+print("The probability of incorrectly failing to \nreject the null hypothesis is {0:.2f}".format(1 - power))
