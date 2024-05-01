@@ -1,3 +1,3 @@
 # Statistics
 
-**Use Python for statistics**
+Examples of common statistical analysis done using **Python** packages. 
